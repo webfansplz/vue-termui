@@ -3,6 +3,8 @@
 // Read more: https://github.com/vuejs/core/pull/3399
 import '@vue/runtime-core'
 
+export {}
+
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Div: typeof import('vue-termui')['TuiBox']
@@ -10,5 +12,3 @@ declare module '@vue/runtime-core' {
     Text: typeof import('vue-termui')['TuiText']
   }
 }
-
-export {}
